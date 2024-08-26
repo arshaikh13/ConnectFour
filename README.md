@@ -1,23 +1,46 @@
-Purpose:
-The "Connect Four" program is a Java implementation of the classic two-player board game, Connect Four. In this game, two players take turns dropping colored discs (one being 'X' and the other 'O') into a vertically suspended grid. The goal of the game is to be the first to form a line of four of one's own discs, either horizontally, vertically, or diagonally.
+# Connect Four - Java Implementation
 
-Overview:
-Initialization: The program starts by initializing the game board, setting up variables, and displaying an empty game board.
+## Purpose
 
-Game Loop: The main game loop continues until the players decide not to play another round. Inside this loop, the following steps occur:
+The **Connect Four** program is a Java implementation of the classic two-player board game, *Connect Four*. In this game, two players take turns dropping colored discs into a vertically suspended grid. The goal is to be the first to form a line of four discs, either horizontally, vertically, or diagonally.
 
-a. Player Input: The program prompts the current player to choose a column where they want to place their piece ('X' or 'O').
+## Overview
 
-b. Input Validation: The program validates the input to ensure it's within the range of 1-7 (the columns on the board) and that the chosen column is not already full.
+### 1. Initialization
 
-c. Piece Placement: The program drops the player's piece into the selected column, occupying the lowest available row in that column.
+The program starts by:
+- Initializing the game board.
+- Setting up necessary variables.
+- Displaying an empty game board to the players.
 
-d. Display Board: After each move, the updated game board is displayed, showing the pieces placed by the players.
+### 2. Game Loop
 
-e. Win and Tie Check: The program checks if the current player has won the game by connecting four pieces in any direction (horizontal, vertical, or diagonal) or if there's a tie when all cells are filled.
+The main game loop runs until the players decide to stop playing. The loop includes the following steps:
 
-f. Switch Player: If the game is not over, the program switches to the other player for their turn.
+- **a. Player Input**:  
+  The program prompts the current player to choose a column where they want to place their piece ('X' or 'O').
 
-End of Round: When the game ends (either due to a win or a tie), it asks the players if they want to play another round.
+- **b. Input Validation**:  
+  The program validates the input to ensure it is within the valid range of columns (1-7) and that the selected column is not already full.
 
-Restart or Exit: Depending on the players' choice, the program either resets the game for another round or exits the program.
+- **c. Piece Placement**:  
+  The program drops the player's piece into the chosen column, occupying the lowest available row.
+
+- **d. Display Board**:  
+  After each move, the updated game board is displayed, showing the current positions of all pieces.
+
+- **e. Win and Tie Check**:  
+  The program checks if the current player has won by forming a line of four pieces (in any direction). It also checks for a tie if all cells are filled with no winner.
+
+- **f. Switch Player**:  
+  If the game is not over, the program switches to the other player for their turn.
+
+### 3. End of Round
+
+At the end of the game (either due to a win or a tie), the program asks the players if they would like to play another round.
+
+### 4. Restart or Exit
+
+Based on the players' choice:
+- **Restart**: The program resets the game and starts a new round.
+- **Exit**: The program terminates.
